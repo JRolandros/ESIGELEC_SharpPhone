@@ -1,2 +1,2 @@
 # ESIGELEC_SharpPhone
-C# project! create a phone simulator for desktop
+This repository is used to post our project in C#! The project is to simulate phones on a desktop
