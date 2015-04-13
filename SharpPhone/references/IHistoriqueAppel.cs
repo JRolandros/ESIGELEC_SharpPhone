@@ -8,10 +8,10 @@ namespace SharpPhone.references
 {
    public interface IHistoriqueAppel
     {
-       public void afficherTousAppels();
-       public void infoAppel(Appel appel);
-       public void afficherAppelsRecus();
-       public void afficherAppelsEmis();
-       public void afficherAppelsManques();
+        void afficherTousAppels();
+       void infoAppel(Appel appel);
+       void afficherAppelsRecus();
+       void afficherAppelsEmis();
+       void afficherAppelsManques();
     }
 }

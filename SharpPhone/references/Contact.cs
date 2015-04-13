@@ -11,8 +11,8 @@ namespace SharpPhone.references
         public string nom { get; set; }
         public string prenom { get; set; }
         private string numTelephone;
-        public string NumTelephone { 
-            get; 
+        public string NumTelephone {
+            get { return numTelephone; }
            private set {
                 System.Text.RegularExpressions.Regex myRegex = new System.Text.RegularExpressions.Regex(@"(^06[0-9]{8}$|^00[0-9]{11,13}$)");
                 if (myRegex.IsMatch(value))

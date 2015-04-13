@@ -8,8 +8,8 @@ namespace SharpPhone.references
 {
     public interface IAppel
     {
-        public void lancerAppel(string numDestinataire);
-        public void composerNumero(int chiffre);
+        void lancerAppel(string numDestinataire);
+        void composerNumero(int chiffre);
 
     }
 }

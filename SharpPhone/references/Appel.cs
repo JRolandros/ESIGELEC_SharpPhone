@@ -9,7 +9,7 @@ namespace SharpPhone.references
    public  class Appel : Communication
     {
        public int duree { get; set; }
-       public Boolean manque { get; }
+       public Boolean manque { get; private set; }
 
        public Appel(string numEmetteur, string numDestinataire)
            : base(numEmetteur, numDestinataire)

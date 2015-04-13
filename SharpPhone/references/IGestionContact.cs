@@ -8,9 +8,9 @@ namespace SharpPhone.references
 {
     public interface IGestionContact
     {
-        public void afficherTousContacts();
-        public void supprimerContact(Contact contact);
-        public void editerContact(Contact contact);
-        public void afficherContact(string numTelephone);
+        void afficherTousContacts();
+        void supprimerContact(Contact contact);
+        void editerContact(Contact contact);
+        void afficherContact(string numTelephone);
     }
 }
