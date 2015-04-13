@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="references\IHistoriqueAppel.cs" />
+    <Compile Include="references\IMessage.cs" />
     <Compile Include="Interfaces\Phone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,7 +60,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="references\Appel.cs" />
+    <Compile Include="references\Communication.cs" />
     <Compile Include="references\Contact.cs" />
+    <Compile Include="references\IAppel.cs" />
+    <Compile Include="references\IGestionContact.cs" />
+    <Compile Include="references\SMS.cs" />
+    <Compile Include="references\Telephone.cs" />
     <EmbeddedResource Include="Interfaces\Phone.resx">
       <DependentUpon>Phone.cs</DependentUpon>
     </EmbeddedResource>
