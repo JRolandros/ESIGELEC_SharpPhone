@@ -44,6 +44,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\AppelHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\AppelHistory.Designer.cs">
+      <DependentUpon>AppelHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\HomePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\HomePanel.Designer.cs">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\PhonePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\PhonePanel.Designer.cs">
+      <DependentUpon>PhonePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\SettingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\SettingPanel.Designer.cs">
+      <DependentUpon>SettingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="references\IHistoriqueAppel.cs" />
     <Compile Include="references\IMessage.cs" />
     <Compile Include="Interfaces\Phone.cs">
@@ -67,21 +96,29 @@
     <Compile Include="references\IGestionContact.cs" />
     <Compile Include="references\SMS.cs" />
     <Compile Include="references\Telephone.cs" />
+    <EmbeddedResource Include="Interfaces\AppelHistory.resx">
+      <DependentUpon>AppelHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\HomePanel.resx">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Phone.resx">
       <DependentUpon>Phone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\PhonePanel.resx">
+      <DependentUpon>PhonePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\SettingPanel.resx">
+      <DependentUpon>SettingPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\SMSPanel.resx">
       <DependentUpon>SMSPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +131,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\networkphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\batteryphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\PhoneFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\contactIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\ExitIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\phoneIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\SMSIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\HistoricIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\SettingsIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\HomeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\HomeButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\PhoneRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\images\PhoneSend.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
