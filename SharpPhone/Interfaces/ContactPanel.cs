@@ -10,17 +10,22 @@ using System.Windows.Forms;
 
 namespace SharpPhone.Interfaces
 {
-    public partial class SMSPanel : UserControl
+    public partial class ContactPanel : UserControl
     {
         private Phone parentPhone = null;
 
-        public SMSPanel(Phone parent)
+        public ContactPanel(Phone parent)
         {
             //Initialisation du panel
             InitializeComponent();
 
             //Création d'un lien entre le téléphone et l'écran
             this.parentPhone = parent;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
