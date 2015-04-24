@@ -32,18 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Linq" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,40 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\phoneSharpeDBModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>phoneSharpeDBModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\phoneSharpeDBModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>phoneSharpeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\phoneSharpeDBModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>phoneSharpeDBModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\references\ManageAppel.cs" />
-    <Compile Include="Data\references\ManageContact.cs" />
-    <Compile Include="Data\references\ManageSMS.cs" />
-    <Compile Include="Data\references\ManageTelephone.cs" />
-    <Compile Include="Data\sysdiagrams.cs">
-      <DependentUpon>phoneSharpeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\T_appels.cs">
-      <DependentUpon>phoneSharpeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\T_contact.cs">
-      <DependentUpon>phoneSharpeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\T_sms.cs">
-      <DependentUpon>phoneSharpeDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\T_telephone.cs">
-      <DependentUpon>phoneSharpeDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="references\IHistoriqueAppel.cs" />
     <Compile Include="references\IMessage.cs" />
     <Compile Include="Interfaces\Phone.cs">
@@ -126,14 +82,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="Data\phoneSharpeDBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>phoneSharpeDBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Data\phoneSharpeDBModel.edmx.diagram">
-      <DependentUpon>phoneSharpeDBModel.edmx</DependentUpon>
-    </None>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,22 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\phoneSharpeDBModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>phoneSharpeDBModel.edmx</DependentUpon>
-      <LastGenOutput>phoneSharpeDBModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Data\phoneSharpeDBModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>phoneSharpeDBModel.edmx</DependentUpon>
-      <LastGenOutput>phoneSharpeDBModel.cs</LastGenOutput>
-    </Content>
-    <Content Include="scriptSQL\SharpPhoneScript.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

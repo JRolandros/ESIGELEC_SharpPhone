@@ -12,15 +12,9 @@ namespace SharpPhone.Interfaces
 {
     public partial class SMSPanel : UserControl
     {
-        private Phone parentPhone = null;
-
-        public SMSPanel(Phone parent)
+        public SMSPanel()
         {
-            //Initialisation du panel
             InitializeComponent();
-
-            //Création d'un lien entre le téléphone et l'écran
-            this.parentPhone = parent;
         }
     }
 }
