@@ -10,17 +10,22 @@ using System.Windows.Forms;
 
 namespace SharpPhone.Interfaces
 {
-    public partial class SMSPanel : UserControl
+    public partial class AppelHistory : UserControl
     {
         private Phone parentPhone = null;
 
-        public SMSPanel(Phone parent)
+        public AppelHistory(Phone parent)
         {
             //Initialisation du panel
             InitializeComponent();
 
             //Création d'un lien entre le téléphone et l'écran
             this.parentPhone = parent;
+        }
+
+        private void AppelHistory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
